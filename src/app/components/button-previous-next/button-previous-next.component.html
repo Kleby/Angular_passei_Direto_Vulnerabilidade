@@ -1,0 +1,15 @@
+@if((position() === -1) && disabledPrevious()) {
+<button class="btn btn-scroll-move" type="button" (click)="onHandlerClick()">
+    <span >
+        <img class="icon-previous-next" [src]="btnIcon.left" alt="button circle arrow left">
+    </span>
+</button>
+}
+
+@if (position() === 1 && disabledNext()) {
+<button class="btn btn-scroll-move" type="button" (click)="onHandlerClick()">
+    <span>
+        <img class="icon-previous-next" [src]="btnIcon.right" alt="button circle arrow right">
+    </span>
+</button>
+}

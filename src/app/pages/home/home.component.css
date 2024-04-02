@@ -1,0 +1,133 @@
+.home__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__content {
+    width: 80%;
+    /* max-width: 1024px; */
+}
+
+.content__banner-top {
+    background: linear-gradient(209deg, #ff7300 47.09%, #e50b36 102.42%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 225px;
+    width: 100%;
+    margin-block: 40px;
+    border-radius: 6px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.banner-title {
+    font-size: 2rem;
+    line-height: 37.2px;
+    font-weight: 400;
+}
+
+.title-hightlight,
+.terms-heightlight {
+    font-weight: 600;
+}
+
+.banner-title,
+.banner-terms {
+    text-align: center;
+    color: #fff;
+}
+
+.banner-terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.terms-heightlight {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.banner-login {
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.img-login {
+    margin-right: -2rem;
+}
+
+.content__files {
+    padding: 1rem 0;
+}
+
+.files__recomendation{
+    margin-bottom: 2rem;
+}
+
+.cards__infos{
+    padding: .25rem;
+}
+/* .cards__info,
+.popular-cards{
+    padding: .25rem;
+} */
+
+/* .cards__content{
+    position: relative;
+    display: flex;
+    align-items: center;
+} */
+
+.popular-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 24px;
+    margin-bottom: 8px;
+    color: #2e2f32;
+}
+
+.popular-description {
+    color: #90939e;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 1.5rem;
+}
+
+/* .popular-cards{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+} */
+
+/* .home__previous-card{
+    position: absolute;
+    z-index:2;
+} */
+/* .btn-card-previous{
+    left: -16px;
+} */
+/* .btn-card-next{
+    right: -20px;
+} */

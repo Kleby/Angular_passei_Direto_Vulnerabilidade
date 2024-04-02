@@ -1,1 +1,81 @@
-<p>side-nav works!</p>
+<section class="sidebar__container">
+    <nav class="sidebar__nav">
+        <ul class="nav__menu">
+            <li class="menu__item">
+                <a  routerLinkActive="active-route" [routerLinkActiveOptions]="{exact: true}"
+                    routerLink="/" class="item__link"
+                >
+                    <fa-icon class="link__icon" [icon]="iconsMenu.home" />
+                    <span class="link__text">
+                        Página inicial
+                    </span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a  routerLinkActive="active-route"
+                    routerLink="/perguntas-respostas" class="item__link"
+                    
+                >
+                    <fa-icon class="link__icon" [icon]="iconsMenu.question" />
+                    <span class="link__text">
+                        Perguntas e respostas
+                    </span>
+                </a>
+            </li>
+
+            <hr class="menu__line">
+
+            <li class="menu__item">
+                <a  routerLinkActive="active-route"
+                    routerLink="/salvos" class="item__link">
+                    <fa-icon class="link__icon" [icon]="iconsMenu.bookMark" />
+                    <span class="link__text">
+                        salvos
+                    </span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a  routerLinkActive="active-route"
+                    routerLink="/historico" class="item__link">
+                    <fa-icon 
+                        class="link__icon" [icon]="iconsMenu.history" />
+                    <span class="link__text">
+                        Histórico
+                    </span>
+                </a>
+            </li>
+
+            <hr class="menu__line">
+
+            <li class="menu__item">
+                <a  routerLinkActive="active-route"
+                    routerLink="/carreiras" class="item__link">
+                    <fa-icon
+                        class="link__icon" [icon]="iconsMenu.card" />
+                    <span class="link__text">
+                        PD Carreita
+                    </span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a  routerLinkActive="active-route"
+                    routerLink="/grupos" class="item__link">
+                    <fa-icon class="link__icon" [icon]="iconsMenu.groups" />
+                    <span class="link__text">
+                        Grupos
+                    </span>
+                </a>
+            </li>
+
+            <hr class="menu__line">
+        </ul>
+    </nav>
+    <div class="sidebar__join">
+        <p class="join__description">
+            Junte-se a milhões de estudantes!
+        </p>
+        <button type="button" class="btn join__btn-trial">
+            Testar grátis
+        </button>
+    </div>
+</section>

@@ -1,1 +1,63 @@
-<p>home works!</p>
+<section class="home__container">
+    <section class="home__content">
+
+        <section class="content__banner-top">
+            <div class="banner-content">
+                <h1 class="banner-title">
+                    Comece a
+                    <span class="title-hightlight">
+                        testar grátis
+                    </span>
+                    o Passei Direto!
+                </h1>
+                <div class="banner-login">
+                    <app-button-login class="app-btn-login" inputImgSrc="/assets/images/login-brands/brand-g.png"
+                        inputLoginTitle="Google" />
+                    <app-button-login class="app-btn-login" inputImgSrc="/assets/images/login-brands/brand-f.png"
+                        inputLoginTitle="Facebook" />
+                </div>
+                <p class="banner-terms">
+                    <span>Ao continuar, você concorda com os  </span>
+                    <span>
+                        <a class="terms-heightlight">
+                            Termos de Uso
+                        </a> 
+                            e 
+                        <a class="terms-heightlight">
+                            Política de Privacidade
+                        </a>
+                    </span>
+                </p>
+            </div>
+            <img class="img-login" src="/assets/images/img-banner-pd.png" alt="">
+        </section>
+        <section class="content__files">
+            <section class="files__recomendation">
+                <div class="cards__info">
+                    <h2 class="popular-title">
+                        Materiais em Alta
+                    </h2>
+                    <p class="popular-description">
+                        Muitas pessoas estão estudando
+                    </p>
+                </div>
+                <app-cards inputCardsId="popularCards" />
+            </section>
+            <section class="files__recomendation">
+                <div class="cards__info">
+                    <h2 class="popular-title">
+                        Perguntas em alta
+                    </h2>
+                    <p class="popular-description">
+                        Muitas pessoas estão interagindo
+                    </p>
+                </div>
+                <app-cards />
+                <section >
+                    <!-- <app-cards inputCardsId="popularCards" /> -->
+                    <!-- <app-button-previous-next /> -->
+                </section>
+            </section>
+        </section>
+    </section>
+</section>

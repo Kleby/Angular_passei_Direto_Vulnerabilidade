@@ -1,0 +1,29 @@
+.cards__content{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.home__previous-card{
+    position: absolute;
+    z-index:2;
+}
+
+.btn-card-previous{
+    left: -16px;
+}
+
+.btn-card-next{
+    right: -20px;
+}
+
+.cards__list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding: .25rem;
+}

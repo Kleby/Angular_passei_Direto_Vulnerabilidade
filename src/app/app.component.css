@@ -1,0 +1,9 @@
+.main__container{
+    height: calc(100vh - 64px);
+    padding-top: 64px;
+    transition: 300ms ease-in-out;
+}
+
+.show__side-bar{
+    margin-left: 232px;
+}

@@ -1,1 +1,19 @@
-<p>cards works!</p>
+<section class="cards__content">
+    <app-button-previous-next 
+        [inputPosition]="-1" (sendPositionEmit)="onHandlerScroll($event)"
+        class="home__previous-card btn-card-previous" [inputDisabledPrevious]="disabledIconPrevious"
+    />
+    <ul class="cards__list" [scrollLeft]="scrollCards"
+    (scroll)="verificationIsDisabled($event)" 
+    >
+        <app-card/>
+        <app-card />
+        <app-card />
+        <app-card />
+        <app-card />
+    </ul>
+    <app-button-previous-next 
+        [inputPosition]="1" (sendPositionEmit)="onHandlerScroll($event)"
+        class="home__previous-card btn-card-next" [inputDisabledNext]="disabledIconNext"
+    />
+</section>
